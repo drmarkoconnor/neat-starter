@@ -16,4 +16,4 @@ This is using the interface for blogs - I notice the time is included I the date
 >
 > [bbc.com](bbc.com)
 >
->
+> ![one and zeros on a computer display](/static/img/img2.jpg "Its all digital to me")
