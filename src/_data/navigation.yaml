@@ -2,8 +2,10 @@ items:
   - text: Services
     url: https://flaxbourtonhub.org
   - text: Menu Two
-    url: "#"
+    url: '#'
   - text: Menu Three
-    url: "#"
+    url: '#'
   - text: Blog
     url: /blog
+  - text: About
+    url: /about
