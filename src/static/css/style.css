@@ -1,0 +1,27 @@
+/* need to convert this into a sass buildd wth partials and then work out how to best incorporate sass build in 11ty */
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after html {
+	box-sizing: inherit;
+}
+
+body {
+	/* background-color: #202020; */
+}
+
+.footer {
+	color: red;
+}
+
+.footer a {
+	text-decoration: none;
+}
+img {
+	width: 50%;
+}
