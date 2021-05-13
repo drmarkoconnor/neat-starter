@@ -1,6 +1,6 @@
 authors:
-  - name: Mark O'Connor
-  - name: Surjith S M
-  - name: Ann Byrne
-  - name: William Shakespeare
+  - text: Mark O'Connor
+  - text: Surjith S M
+  - tezt: Ann Byrne
+  - text: William Shakespeare
 text: CMS Author
