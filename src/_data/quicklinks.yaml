@@ -1,13 +1,13 @@
----
 links:
   - title: Title 1
-    url: 'link 1'
+    url: link 1
     desc: Description 1 - held in quicklinks.yaml file
   - title: Title 2
-    url: 'link 2'
-    desc:
-      Description 2 - efficient way of holding important links in data format
+    url: link 2
+    desc: Description 2 - efficient way of holding important links in data format
   - title: Title 3
-    url: 'link 3'
-    desc:
-      Description 3 - efficient way of holding important links in data format
+    url: link 3
+    desc: Description 3 - efficient way of holding important links in data format
+  - title: Title 4 - css added link
+    url: link 4
+    desc: Description 4 - Added via the admin site - Wow!
