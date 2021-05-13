@@ -3,8 +3,8 @@ items:
     url: '/'
   - text: Team
     url: '/team/index.html'
-  - text: Menu 2
-    url: '#'
+  - text: Admin
+    url: '/admin'
   - text: Blog
     url: /blog
 # moc:
