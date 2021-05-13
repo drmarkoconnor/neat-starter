@@ -71,11 +71,8 @@ collections:
     name: 'authors'
     files: 'src/_data/authors.yaml'
     identifier_field: name
+    widget: 'string'
+    allow_add: true
+    collapsed: false
     fields:
-      - label: 'Author Names'
-        name: 'authors'
-        widget: 'string'
-        allow_add: true
-        collapsed: false
-        fields:
-          - { label: Name, name: text, widget: string }
+      - { label: Name, name: text, widget: string }
