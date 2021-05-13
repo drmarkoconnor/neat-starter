@@ -71,6 +71,7 @@ collections:
     name: 'authors'
     files:
       - label: Authors
+        name: 'authors/'
         file: 'src/_data/authors.yaml'
         identifier_field: name
         widget: 'string'
