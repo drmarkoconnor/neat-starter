@@ -77,4 +77,4 @@ collections:
         allow_add: true
         collapsed: false
         fields:
-        { label: Name, name: text, widget: string }
+          - { label: Name, name: text, widget: string }
