@@ -10,6 +10,10 @@ module.exports = function (eleventyConfig) {
 	// Merge data instead of overriding
 	eleventyConfig.setDataDeepMerge(true);
 
+	eleventyConfig.setFrontMatterParsingOptions({
+		excerpt: true,
+	});
+
 	// human readable date
 	eleventyConfig.addFilter('readableDate', (dateObj) => {
 		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
@@ -62,5 +66,7 @@ module.exports = function (eleventyConfig) {
 			input: 'src',
 		},
 		htmlTemplateEngine: 'njk',
+		markdownTemplateEngine: 'njk',
+		dataTemplateEngine: 'njk',
 	};
 };

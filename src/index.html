@@ -1,22 +1,38 @@
 ---
 layout: default
-title: Neat Starter
+title: 11ty & Netlify CMS template
 path: home
+boot: false
+awesome: true
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+<div class="hero">
+	<h1 class="">
+		Welcome to
+		<strong class=""> {{title}} <i class="fas fa-home"></i> </strong>
+	</h1>
+	<p>
+		This index.html page use the default layout its page frontmatter (which
+		really should be a home layout perhaps) which in turn injects the navbar and
+		the footer via an include _partials/navbar and header. The navbar needs a
+		hamburger button sorting
+	</p>
+	<p>
+		The default page uses some conditional logic in its head to add css link to
+		bootstrap and for metadata depending on a pages frontmatter description: and
+		boot: values
+	</p>
+	<p>
+		The navbar derives its links from the navigation.yaml as another example of
+		using 11ty's very useful' data cascade
+	</p>
+	<p>
+		the boot switch basically allows any page where boot is true to use boostrap
+		5 classes. The main style sheet is listedlast in the default head so will
+		have a greater prioroty howeveer. Useful for one off bits of styling perhaps
+	</p>
+	<p>an include below introduces linkls from the yaml 'data' file quicklinks</p>
+	<p>The links below are in the quicklinks.yaml file in the _data directory</p>
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
-
-  {% include "./_includes/partials/content.html" %}
+	{% include "./_includes/partials/content.html" %}
 </div>

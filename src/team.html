@@ -1,0 +1,27 @@
+---
+layout: default
+title: The team
+height: 10vh
+---
+
+<h1>Hubber's team</h1>
+<p>
+	This page uses a team.json database (in the _data/ directory) of team members
+	with 4 properties. 
+	The front matter contains a height: 10vh key value pair
+	which is used to set the style property of the cards ( which would be set to
+	40vh in the stylesheet.) <p> The page style has a higher specificty so this is a
+	goood trick</p>
+</p>
+<section class="mini-blog">
+	{% for person in team %}
+	<div class="card" style="height:{{ height }}">
+		<ul>
+			<li>Name: {{person.Name}}</li>
+			<li>Role: {{person.Role}}</li>
+			<li>Tel: {{person.Number}}</li>
+			<li>Email: person.Email</li>
+		</ul>
+	</div>
+	{% endfor %}
+</section>

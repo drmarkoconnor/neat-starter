@@ -5,12 +5,16 @@ description:
   see if the uder interface on netlify cms handles iit correctly
 date: 2021-05-08
 author: Dr Mark O'Connor
-tags: second-tag
+tags:
+  - second-tag
+  - moc
 ---
+
+#### Tags:{{ tags }}
 
 # todo:
 
-- Need to see if my name apostrophe is okay also YES
+- Need to see if my name apostrophe is okay also YES!
 - understand multiple tags
 - check speed of build QUICK
 - remove stuff I don't need but keep stuff I neeed to undderstand a while NEED
