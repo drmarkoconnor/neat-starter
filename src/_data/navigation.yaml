@@ -1,12 +1,11 @@
 items:
   - text: Home
-    url: '/'
+    url: /
   - text: Team
-    url: '/team/index.html'
+    url: /team/index.html
   - text: Admin
-    url: '/admin'
+    url: /admin
   - text: Blog
     url: /blog
-# moc:
-#   - text: Mark
-#     url: 'https://oldrectory.online/'
+  - text: Contact
+    url: /contact
