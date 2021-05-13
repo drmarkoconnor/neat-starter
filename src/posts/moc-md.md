@@ -8,6 +8,7 @@ author: Dr Mark O'Connor
 tags:
   - second-tag
   - moc
+  - test
 ---
 
 #### Tags:{{ tags }}
