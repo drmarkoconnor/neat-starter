@@ -69,11 +69,12 @@ collections:
           - { label: Date, name: date, widget: datetime }
   - label: 'Authors'
     name: 'authors'
-    file: 'src/_data/authors.yaml'
+    files: 'src/_data/authors.yaml'
+    identifier_field: name
     fields:
-      - label: Author Names
-        name: authors
-        widget: list
+      - label: 'Author Names'
+        name: 'authors'
+        widget: 'string'
         allow_add: true
         collapsed: false
         fields:
