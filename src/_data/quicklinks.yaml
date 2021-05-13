@@ -11,3 +11,6 @@ links:
   - title: Title 4 - css added link
     url: link 4
     desc: Description 4 - Added via the admin site - Wow!
+  - title: lte
+    url: /
+    desc: "trying too understand syntax "
