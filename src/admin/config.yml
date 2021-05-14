@@ -75,8 +75,8 @@ collections:
         name: 'authors'
         file: 'src/_data/authors.yaml'
         fields:
-         - label: "author List"
-            name: "author"
-            widget: "list"
+          - label: 'author List'
+            name: 'author'
+            widget: 'list'
             fields:
               - { label: Name, name: name, widget: string }
