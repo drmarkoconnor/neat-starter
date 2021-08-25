@@ -9,3 +9,5 @@ items:
     url: /blog
   - text: Contact
     url: /contact
+  - text: delme_blog
+    url: /blog
