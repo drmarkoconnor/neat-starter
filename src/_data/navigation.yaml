@@ -7,7 +7,14 @@ items:
     url: /admin
   - text: Blog
     url: /blog
+<<<<<<< HEAD
   - text: Data
     url: /UsingData
   - text: Pagination
     url: /testpagination
+=======
+  - text: Contact
+    url: /contact
+  - text: MOREblog
+    url: /blog
+>>>>>>> bf3a6e19f17893fdfcac43415efdddee7148687a
