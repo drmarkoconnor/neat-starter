@@ -3,12 +3,12 @@ layout: default
 prism: true
 ---
 
-<h1>{{title}}</h1>
-<p>
-	<time>
-		{{ date | readableDate }} by author
-		<a>{{ author }}</a>
-	</time>
-</p>
+<article class="full-blog">
+	<h1>{{title}}</h1>
+	<p>
+		<time> {{ date | readableDate }} by author {{ author }} </time>
+	</p>
+	<p>tags: {{tags}}</p>
 
-<article class="full-blog">{{ content | safe }}</article>
+	{{ content | safe }}
+</article>

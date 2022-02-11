@@ -1,18 +1,20 @@
 /* need to convert this into a sass buildd wth partials and then work out how to best incorporate sass build in 11ty */
 /* Need to structure this with sass  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
 	/* sprimary color block */
 	--primary-color-100: white;
-	--primary-color-300: hsla(0, 20%, 20%, 0.816);
-	--primary-color-600: hsla(0, 40%, 40%, 0.816);
-	--primary-color-500: hsla(0, 0%, 50%, 0.5);
-	--primary-color-900: hsla(255, 80%, 80%, 0.816);
+	--primary-color-300: hsla(125, 70%, 70%, 0.816);
+	--primary-color-600: hsla(125, 40%, 40%, 0.816);
+	--primary-color-900: hsla(125, 30%, 30%, 0.816);
+	--fader: hsla(0, 15%, 18%, 0.3);
 
 	/* secondary color block */
-	--secondary-color-100: hsl(0, 90%, 90%);
-	--secondary-color-300: hsl(180, 40%, 60%);
-	--secondary-color-600: hsla(0, 60%, 30%, 0.8);
-	--secondary-color-900: hsl(0, 80%, 10%);
+	--secondary-color-100: white;
+	--secondary-color-300: hsl(0, 80%, 80%);
+	--secondary-color-600: hsl(0, 60%, 60%);
+	--secondary-color-900: hsl(0, 30%, 30%);
 }
 
 html {
@@ -28,8 +30,9 @@ html {
 
 body {
 	background-color: var(--primary-color-100);
+	font-family: 'Roboto', sans-serif;
 }
-body h1,
+body,
 h2,
 h3,
 h4,
@@ -37,12 +40,24 @@ h5,
 h6,
 body p,
 a {
-	color: var(--secondary-color-900);
+	color: var(--primary-color-900);
 }
-
+h1 {
+	color: var(--secondary-color-900);
+	font-weight: bold;
+}
+p {
+	line-height: 1.9em;
+	font-weight: bold;
+}
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
 .logo {
-	font-size: 2em;
-	color: var(--secondary-color-100);
+	font-size: 2.5em;
+	color: var(--secondary-color-300);
 	font-weight: bold;
 }
 
@@ -62,58 +77,84 @@ a {
 } */
 
 img {
-	width: 50%;
+	width: 100%;
 }
 
 .quicklinks {
-	background-color: var(--secondary-color-300);
-	border: solid var(--secondary-color-100) 2px;
-	margin-top: 4rem;
+	background-color: var(--secondary-color-900);
+	width: 80%;
+	margin: 0 auto;
+	box-shadow: 5px 5px rgba(94, 91, 83, 0.6);
+	border-radius: 20px;
+	padding: 10px;
+}
+.quicklinks p {
+	background-color: var(--secondary-color-600);
+	color: var(--secondary-color-100);
+	font-weight: bold;
+	border: solid var(--secondary-color-900) 2px;
+	border-radius: 20px;
+	padding: 1em;
+	margin-top: 5px;
 }
 .quicklinks a {
 	color: var(--secondary-color-900);
+	text-decoration: none;
+}
+.quicklinks h3 {
+	color: var(--secondary-color-100);
+	margin: 0;
+}
+.fas {
+	color: var(--primary-color-300);
 }
 
 /* NAVIGATION */
 
 nav {
 	position: fixed;
-	top: 0;
-	display: flex;
-	justify-content: space-between;
-	background-color: var(--primary-color-300);
-	color: var(--secondary-color-900);
-	align-items: center;
 
-	width: 100%;
-	/* margin: 0 auto; */
-	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* flex-direction: column; */
+	max-width: 1000px;
+	top: 0;
+	left: 0;
+	right: 0;
+	/* width: 100%; */
+	background-color: var(--secondary-color-900);
+	color: var(--secondary-color-900);
+	padding: 10px;
+	margin: 0 auto;
+	/* align-items: center; */
 }
 
 /* spacer is used in navbar.html to drop content below the fixed navbar */
 
 .spacer {
-	height: 100px;
+	height: 90px;
 	width: 100%;
 }
-nav .active {
-}
+
 nav a {
 	text-decoration: none;
 	color: var(--secondary-color-100);
 }
-nav {
-	padding: 20px;
-}
+
 .nav ul {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
+	align-items: center;
 	list-style: none;
 	padding: 5px;
 	margin: 10px;
 	width: 600px;
-	height: 20px;
+	height: 50px;
+}
+li {
+	margin: 5px;
 }
 
 /* end navigation */
@@ -134,29 +175,104 @@ nav {
 	overflow: hidden;
 	border: solid 2px var(--primary-color-600);
 	width: 300px;
-	height: 40vh;
-	background-color: var(--primary-color-100);
+	height: 80vh;
+	/* background-color: var(--primary-color-900); */
+	/* background-image: url('../img/old_rectory-17.jpg');
+	background-size: contain; */
 	margin: 2px 5px;
 	padding: 10px;
+}
+.postUrl a {
+	text-decoration: none;
+	color: var(--secondary-color-900);
+	background-color: var(--primary-color-300);
 }
 /* end mini blogs */
 
 /* BLOG POSTS */
-article.full-blog {
-	/* use to style all whole page blog; */
+/* use to style all whole page blog; */
+blockquote {
+	border-left: solid 5px var(--primary-color-600);
+	margin-right: 5px;
+	padding: 0 10px;
+	/* height: 200px; */
+}
+.full-blog {
+	font-size: 0.9rem;
+	width: 90%;
+	margin: 0 auto;
+}
+.full-blog h1 {
+	color: blue;
+}
+.full-blog time {
+	color: rgb(255, 0, 64);
+}
+
+.in-post {
+	border-radius: 20px;
+	height: 100vh;
+	background-size: auto;
+	padding: 20px;
+	margin: 20px;
+	background-blend-mode: overlay;
+}
+.in-post p {
+	font-size: 1.2rem;
+	line-height: 1.3rem;
+	color: rgb(0, 0, 2);
+	padding: 20px;
+	margin: 20px;
+	background-color: white;
+}
+
+.in-post h1 {
+	color: inherit;
+	font-weight: bold;
 }
 /* end blog */
 
 /* FOOTER */
 
 .footer {
-	position: fixed;
-	background-color: var(--secondary-color-100);
-	width: 100%;
-	bottom: 0;
-	text-decoration: none;
-	color: var(--secondary-color-900);
+	/* position: fixed; */
+	display: flex;
+	/* bottom: 0;
+	right: 0;
+	left: 0; */
+	justify-content: center;
+	align-items: center;
 	text-align: center;
+	background-color: var(--secondary-color-900);
+	width: 100%;
+	max-width: 1000px;
+	height: 50px;
+	text-decoration: none;
+	color: var(--secondary-color-100);
+	margin: 0 auto;
+	padding: 10px;
+	margin-top: 2em;
 }
 
 /*  end footer */
+
+@media (max-width: 700px) {
+	nav {
+		flex-direction: column;
+	}
+}
+.switcher {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+.switcher > * {
+	flex-grow: 1;
+	flex-basis: calc((30rem - 100%) * 999);
+}
+
+.switcher > :nth-last-child(n + 5),
+.switcher > :nth-last-child(n + 5) ~ * {
+	flex-basis: 100%;
+}

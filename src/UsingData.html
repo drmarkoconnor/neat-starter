@@ -1,0 +1,55 @@
+---
+layout: default
+title: 11ty's great data cascade
+---
+
+<h1>{{title}}</h1>
+
+<h2><a href="https://www.11ty.dev/docs/collections/">11ty Collections</a></h2>
+<p>
+	Take any existing tagName and iterate over
+	<code>collections.tagName</code> with liquid or nunjucks template code
+</p>
+<h3>Result for tagName = "test"</h3>
+
+<ul>
+	{% if collections.test%} {% for item in collections.test %}
+	<li>{{item.data.title}}</li>
+	{% endfor %} {% else %}There are no posts with the tag test. Why not add one
+	to see what happens here {% endif %}
+</ul>
+<h3>Result for tagName = "post"</h3>
+
+<ul>
+	{% for item in collections.post %}
+	<li>{{item.data.title}}</li>
+	{% endfor %}
+</ul>
+<h2>Other data</h2>
+<p>
+	From authors.yaml in the _data directory. By iterating over the authors.yaml
+	file it is possible to pick out just the property you want ( in this case
+	name) => <code>authors.authors.name</code>
+</p>
+<ul>
+	{% for item in authors.authors %}
+	<li>{{ item.name }}</li>
+	{% endfor %}
+</ul>
+<p>
+	It is possible to use the admin/config.yaml file to set up the Netlify CMS
+	editor to read and write to the file and therefore allow authenticated web
+	users to create more examples. This is the same for the quicklinks.yaml and
+	navigation.yaml files which can be used as examples for other use cases too
+</p>
+<h2>Special <code>all</code> collection</h2>
+<p>
+	By default Eleventy puts all content (independent of whether or not it has any
+	assigned tags) into a collections.all Collection. This allows an iteration
+	over all content inside of a template.
+</p>
+<ul>
+	{%- for post in collections.all -%}
+	<li><a href="{{ post.url }}">{{ post.url }}</a></li>
+	{%- endfor -%}
+</ul>

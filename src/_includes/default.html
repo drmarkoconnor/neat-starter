@@ -31,12 +31,14 @@
 		<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 	</head>
 	<body>
-		{% include "./partials/navbar.html" %} {{ content | safe }} {% include
-		"./partials/footer.html" %}
+		<div class="container">
+			{% include "./partials/navbar.html" %} {{ content | safe }} {% include
+			"./partials/footer.html" %}
 
-		<script src="/static/js/alpine.js"></script>
+			<script src="/static/js/alpine.js"></script>
 
-		{% if path == "home" %}
+			{% if path == "home" %}
+		</div>
 		<!-- Netlify Identity Widget -->
 		<!-- Needed only if you are using Netlify Identity feature -->
 		<script

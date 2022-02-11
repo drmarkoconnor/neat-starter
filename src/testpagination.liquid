@@ -1,0 +1,21 @@
+---
+layout: default
+title: Pagination
+pagination:
+ data: collections.post
+ size: 2
+ alias: posts
+---
+
+<h1>{{ title }}</h1>
+<ol>
+	{% for post in posts %}
+	<li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+	{% endfor %}
+	{% if pagination.href.previous%}
+	<a href="{{ pagination.href.previous }}">previous</a>{% endif %}
+	{% if pagination.href.next%}
+	<a href="{{ pagination.href.next }}">next</a>{% endif %}
+
+</ol>
+

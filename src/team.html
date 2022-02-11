@@ -1,17 +1,16 @@
 ---
 layout: default
 title: The team
-height: 10vh
+height: 15vh
 ---
 
-<h1>Hubber's team</h1>
+<h1>{{title}}</h1>
 <p>
-	This page uses a team.json database (in the _data/ directory) of team members
-	with 4 properties. 
-	The front matter contains a height: 10vh key value pair
-	which is used to set the style property of the cards ( which would be set to
-	40vh in the stylesheet.) <p> The page style has a higher specificty so this is a
-	goood trick</p>
+	This page iterates over a team.json database (in the _data/ directory) creating team members with 4 properties, Name, Role, Tel, Email</p>
+	<p>
+	The front matter contains a <code> height: 10vh </code> key value pair
+	which is used to set the in line style property of the cards  ( which would otherwise be set to 40vh in the main css stylesheet.) <p> The in line style has a higher specificty so this is a
+	good trick. See blog page for same class element but using the <code>height:40vh</code> setting from styles.css </p>
 </p>
 <section class="mini-blog">
 	{% for person in team %}

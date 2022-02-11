@@ -6,6 +6,31 @@ description: great blogs Mark O'Connor
 
 <div class="main-blog">
 	<h1>{{title}}</h1>
-
+	<p>
+		This page (blog.html) sits in the _include folder and is used in the front
+		matter of blog/index.html ( to which the menu item links) which in turn
+		iterates over the posts collection
+		<code>[collections.post]</code> taking a few elements only of each post (
+		URL, date, author and description ( explore truncate for height
+		consistency)). The data is held in a ".card" class which is styled as fairly
+		basic cards here.
+	</p>
+	<p>
+		Each blog post uses the post template as a layout ( assigned in posts.jason
+		- an example of a directory data object which applies to all files in the
+		same directory - cool) )
+	</p>
+	<p>The post tempplate has a class of ".full-blog" which styles it</p>
+	<p>
+		A class of ".in-post" is user created within each blog post md file ( it is
+		possible to mix in html elements to a markdown file pr just write the blog
+		in html too of course)
+	</p>
+	<h2>Styling</h2>
+	<p>
+		The following cards could be styled completely differently. If you wish to
+		do this then go to blog/index.html in src folder to add other css classes
+		and generally rearrange the html for a different look
+	</p>
 	{{ content | safe }}
 </div>

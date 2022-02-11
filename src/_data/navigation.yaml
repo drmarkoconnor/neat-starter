@@ -7,5 +7,7 @@ items:
     url: /admin
   - text: Blog
     url: /blog
-  - text: Contact
-    url: /contact
+  - text: Data
+    url: /UsingData
+  - text: Pagination
+    url: /testpagination

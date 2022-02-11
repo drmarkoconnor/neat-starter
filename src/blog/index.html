@@ -13,14 +13,15 @@ layout: blog
 				</a>
 			</h2>
 			<p class='dateTime'>
-				{{ post.date | readableDate }} by 
+				{{ post.data.date | readableDate }} by 
 				<div class="author">
 					{{ post.data.author }} 
 				</div>
-					
 			</p>
+			
 			{% if post.data.description %}
-			<p class='description'>{{ post.data.description }}</p>
+			<p>Blog post Description:</p> 
+			<p class='description'> {{ post.data.description | truncate}}</p>
 			{% endif %}
 
 			<p>

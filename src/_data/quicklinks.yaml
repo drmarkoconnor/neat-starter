@@ -1,16 +1,27 @@
 links:
-  - title: Title 1
-    url: link 1
-    desc: Description 1 - held in quicklinks.yaml file
-  - title: Title 2
-    url: link 2
-    desc: Description 2 - efficient way of holding important links in data format
-  - title: Title 3
-    url: link 3
-    desc: Description 3 - efficient way of holding important links in data format
-  - title: Title 4 - css added link
-    url: link 4
-    desc: Description 4 - Added via the admin site - Wow!
-  - title: lte
+  - title: From quicklinks.yaml ( via an include of contents.html )
     url: /
-    desc: "trying too understand syntax "
+    icon: home
+    desc: This section's content is held in the quicklinks.yaml file
+  - title: Styling
+    url: /
+    icon: link
+    desc: It is styled with the .quicklinks class selector in styles.css
+  - title: HTML
+    url: /
+    icon: file-archive
+    desc:
+      The html is held in contents.html. njks templates loop through the
+      quicklinks.yaml data
+  - title: Netlify CMS
+    url: /
+    icon: cloud-upload-alt
+    desc:
+      Quicklinks is a collection in the netlify CMS editor ( ie new entries can
+      be added via the admin site)
+  - title: Just like Navbar links
+    url: /
+    icon: flag-checkered
+    desc:
+      The navbar links iterate over a navigations.yaml file. This file can be
+      added to ( or deleted via the CMS editor reached from the admin menu link)

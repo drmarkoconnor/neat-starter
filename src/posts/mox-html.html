@@ -1,19 +1,37 @@
 ---
-title: This is my first added post written in html
+title: HTML blog template
 description:
-  as html works I can style blogs directly and use the content from my 50:50
-  course with Brad
+  Uses a front matter image url to set background.Copy and use the front matter
+  and classes (found in /static/css/style.css) All post gets a post tag from
+  posts.json. This text will be inside a blockquote tag outside of "in-post"
+  class but inside "full-blog" class which is derived from the layout file
+  posts.html. That file has h1 p time and article tags too which could be
+  styled.
 date: 2021-09-08
+bgImage: '/static/img/old_rectory-12.jpg'
 author: Dr Mark O'Connor
 tags:
   - second-tag
   - moc
+  - post
 ---
 
-<h1>Written in html marky markdown</h1>
+<h1>Use this post as a template and class reference</h1>
+<blockquote>{{description}}</blockquote>
+<section class="in-post" style="background-image: url({{bgImage}})">
+	<h1>This h1 is inside a section tag with class "in-post"</h1>
 
-a link to the <a href="http://bbc.com/">BBC</a> as html works I can style blogs
-directly and use the content from my 50:50 course with Brad I really need to
-mind map this out and then create a commented template Next is to use the CMS
-get some basic flow around git so you avoid the resetting of the remote origin
-etc
+	<p>
+		The rest of this blog post is currently in a p tag. Any other elements
+		introduced into the blog template should have any classes placed in
+		style.css
+	</p>
+
+	<p>
+		The in-post class in style.css controls the styling of this text and the
+		header above and image
+	</p>
+	<p>
+		to remove the background image just remove reference to it in frontmatter
+	</p>
+</section>

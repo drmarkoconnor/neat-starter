@@ -7,32 +7,42 @@ awesome: true
 ---
 
 <div class="hero">
-	<h1 class="">
-		Welcome to
-		<strong class=""> {{title}} <i class="fas fa-home"></i> </strong>
-	</h1>
+	<h1 class="">Welcome to {{title}} <i class="fas fa-home fa-4x"></i></h1>
+	<h2>Default layouts</h2>
 	<p>
-		This index.html page use the default layout its page frontmatter (which
-		really should be a home layout perhaps) which in turn injects the navbar and
-		the footer via an include _partials/navbar and header. The navbar needs a
-		hamburger button sorting
+		This home page (index.html) references the default.html layout (in _layouts
+		dir) in its page frontmatter which in turn injects the navbar and the footer
+		via an include _partials/navbar and header.
 	</p>
+	<h2>Front matter conditonal logic</h2>
 	<p>
-		The default page uses some conditional logic in its head to add css link to
-		bootstrap and for metadata depending on a pages frontmatter description: and
-		boot: values
+		The template default page uses some conditional logic in its head to add a
+		css link to bootstrap, font-awesome and for metadata depending on a
+		particular page's frontmatter as follows.
+		<blockquote>
+		<li>
+			description: "any text here gets into the page's meta data</li>" ( and can be used for
+			other purposes too )
+		</li>
+		<li>boot: true</li>
+		will mean the page can reference bootstrap classes
+		<li>awesome: true</li>
+		will allow use of the "fa fas-name" icons from
+		<a href="https://fontawesome.com">Font awesome</a></blockquote>
 	</p>
+	<h2>Data derived nav links</h2>
 	<p>
-		The navbar derives its links from the navigation.yaml as another example of
-		using 11ty's very useful' data cascade
+		The navbar derives its links from iterating over the elements of the navigation.yaml file. The Netlify CMS can change this file too ( whetheer that is useful is a use case for each user of this template)
 	</p>
-	<p>
-		the boot switch basically allows any page where boot is true to use boostrap
-		5 classes. The main style sheet is listedlast in the default head so will
-		have a greater prioroty howeveer. Useful for one off bits of styling perhaps
+	<h2>CSS Styling</h2><p>
+	The main style sheet is listed last in the default head so will
+		have a greater priority thasn the others referenced.
 	</p>
-	<p>an include below introduces linkls from the yaml 'data' file quicklinks</p>
-	<p>The links below are in the quicklinks.yaml file in the _data directory</p>
-
+	<h2>Data derived content</h2>
+	<p>This css styled 'table' (it's not a table ) is generated from data, held in the quicklinks.yaml file, iterated over by the partial contents.html file. Styling is in styles.css using a .quicklinks class</p>
+<!--  -->
 	{% include "./_includes/partials/content.html" %}
+	<h2>Colour scheme</h2>
+	Define <code>var(--primary-color-XXX):hsl(x,y%,z%) </code> and
+	<code> var(--secondary-color-XXX):hsl(x,y%,z%)</code> using XXX to indicate different shades of same color. Makes colour ( I'm English, this is how we spell it!) palette very easy to change for whole site.
 </div>

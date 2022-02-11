@@ -1,18 +1,20 @@
 ---
 title: This is my first added post written in markdown
 description:
-  I want to check whether this works and if so duplicaet with an html file to
-  see if the uder interface on netlify cms handles iit correctly
+  A markdown post with injections of html to pull in both in-line stlye and
+  classes
 date: 2021-05-08
 author: Dr Mark O'Connor
+bgImage: '/static/img/old_rectory-1.jpg'
 tags:
-  - second-tag
-  - moc
-  - test
+  - Template
 ---
 
 #### Tags:{{ tags }}
 
+<quote>Description:{{ description }}</quote>
+
+<section class="in-post" style="background-image: url({{bgImage}})">
 # todo:
 
 - Need to see if my name apostrophe is okay also YES!
@@ -26,3 +28,4 @@ tags:
 - need to think through sass partials and where to include them
 - Next check if html works
 - include an image
+</section>
