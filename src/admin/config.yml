@@ -72,7 +72,7 @@ collections:
     name: 'authors'
     description: 'The contributing authors'
     files:
-      - label: 'authors'
+      - label: 'Authors'
         name: 'authors'
         file: 'src/_data/authors.yaml'
         fields:
