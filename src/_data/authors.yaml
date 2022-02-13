@@ -1,9 +1,10 @@
-- name: Mark OConnor
-  email: jhlkjhlkjhlkjh
-  mobile: 999
-- name: William Shakespeare
-  email: luhluhluh
-  mobile: 777
-- name: Ann OConnor
-  email: khgkjhhgk
-  mobile: 6666
+authors:
+  - name: Mark OConnor
+    email: jhlkjhlkjhlkjh
+    mobile: 999
+  - name: William Shakespeare
+    email: luhluhluh
+    mobile: 777
+  - name: Ann OConnor
+    email: khgkjhhgk
+    mobile: 6666
