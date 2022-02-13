@@ -82,24 +82,24 @@ collections:
               - { label: Author, name: author, widget: string }
               - { label: URL, name: url, widget: string }
               - { label: Date, name: date, widget: datetime }
-      - label: 'The Authors'
+  - label: 'The Authors'
+    name: 'authors'
+    description: 'The contributing authors'
+    file: 'src/_data/authors.yaml'
+    fields:
+      - label: 'Authors Subfields'
         name: 'authors'
-        description: 'The contributing authors'
-        file: 'src/_data/authors.yaml'
+        widget: 'list'
+        allow_add: true
         fields:
-          - label: 'Authors Subfields'
-            name: 'authors'
-            widget: 'list'
-            allow_add: true
-            fields:
-              - label: 'Name'
-                name: 'name'
-                widget: 'string'
-              - label: 'Email'
-                name: 'email'
-                widget: 'string'
-                required: false
-              - label: 'Mobile'
-                name: 'mobile'
-                required: false
-                widget: 'number'
+          - label: 'Name'
+            name: 'name'
+            widget: 'string'
+          - label: 'Email'
+            name: 'email'
+            widget: 'string'
+            required: false
+          - label: 'Mobile'
+            name: 'mobile'
+            required: false
+            widget: 'number'
