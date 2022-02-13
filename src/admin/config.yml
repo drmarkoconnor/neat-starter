@@ -55,6 +55,23 @@ collections:
             fields:
               - { label: Title, name: text, widget: string }
               - { label: URL, name: url, widget: string }
+                #
+  - label: 'NewAuthors'
+    name: 'authors'
+    editor:
+      preview: false
+    files:
+      - label: 'Authors'
+        name: 'authors'
+        file: 'src/_data/authors.yaml'
+        fields:
+          - label: Author
+            name: authors
+            widget: list
+            allow_add: true
+            collapsed: false
+            fields:
+              - { label: Title, name: text, widget: string }
       - label: 'Quick Links'
         name: 'links'
         file: 'src/_data/quicklinks.yaml'
@@ -82,23 +99,23 @@ collections:
               - { label: Author, name: author, widget: string }
               - { label: URL, name: url, widget: string }
               - { label: Date, name: date, widget: datetime }
-  - label: 'The Authors'
-    name: 'authors'
-    description: 'The contributing authors'
-    files:
-      - label: 'Authors Subfields'
-        file: 'src/_data/authors.yaml'
-        name: 'authors'
-        widget: 'list'
-        fields:
-          - label: 'Name'
-            name: 'name'
-            widget: 'string'
-          - label: 'Email'
-            name: 'email'
-            widget: 'string'
-            required: false
-          - label: 'Mobile'
-            name: 'mobile'
-            required: false
-            widget: 'number'
+  # - label: 'The Authors'
+  #   name: 'authors'
+  #   description: 'The contributing authors'
+  #   files:
+  #     - label: 'Authors Subfields'
+  #       file: 'src/_data/authors.yaml'
+  #       name: 'authors'
+  #       widget: 'list'
+  #       fields:
+  #         - label: 'Name'
+  #           name: 'name'
+  #           widget: 'string'
+  #         - label: 'Email'
+  #           name: 'email'
+  #           widget: 'string'
+  #           required: false
+  #         - label: 'Mobile'
+  #           name: 'mobile'
+  #           required: false
+  #           widget: 'number'
