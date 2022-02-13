@@ -24,9 +24,9 @@ collections:
           name: 'author',
           widget: 'relation',
           collection: 'authors',
-          value_field: 'name',
-          search_fields: ['name'],
-          display_fields: ['name'],
+          value_field: 'name.name',
+          search_fields: ['name.name'],
+          display_fields: ['name.name'],
         }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
@@ -35,7 +35,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - widget: select
-        label: 'tags'
+        label: 'Tags'
         name: 'tags'
         multiple: true
         create: true
@@ -83,7 +83,7 @@ collections:
         file: 'src/_data/authors.yaml'
         fields:
           - label: 'Authors Subfields'
-            name: 'authors'
+            name: 'name'
             widget: 'list'
             fields:
               - label: 'Name'
