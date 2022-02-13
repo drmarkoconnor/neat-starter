@@ -72,13 +72,14 @@ collections:
               - { label: Description, name: desc, widget: string }
       - label: 'Meta Settings'
         name: 'meta_settings'
-        allow_add: true
+
         file: 'src/_data/settings.yaml'
         fields:
           - { label: Name, name: name, widget: string }
           - { label: Author, name: author, widget: string }
           - { label: URL, name: url, widget: string }
           - { label: Date, name: date, widget: datetime }
+        allow_add: true
       - label: 'The Authors'
         name: 'authors'
         description: 'The contributing authors'
