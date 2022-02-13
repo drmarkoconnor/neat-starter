@@ -2,9 +2,9 @@ backend:
   # Use netlify identity as backend
   name: git-gateway
   branch: master
-  ### enable below lines for github integration ###
-  # name: github
-  # repo: surjithctly/neat-starter
+### enable below lines for github integration ###
+# name: github
+# repo: surjithctly/neat-starter
 media_folder: 'src/static/img'
 public_folder: '/static/img'
 
@@ -23,10 +23,10 @@ collections:
           label: 'Choose Author',
           name: 'author',
           widget: 'relation',
-          collection: 'links',
-          value_field: 'name.name',
-          search_fields: ['name.name'],
-          display_fields: ['name.name'],
+          collection: 'authors',
+          value_field: 'authors.*',
+          search_fields: ['authors.*'],
+          # display_fields: ['authors.authors.name'],
         }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
@@ -92,6 +92,8 @@ collections:
               - label: 'Email'
                 name: 'email'
                 widget: 'string'
+                required: false
               - label: 'Mobile'
                 name: 'mobile'
+                required: false
                 widget: 'number'
