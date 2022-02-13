@@ -10,18 +10,18 @@ links:
   - title: HTML
     url: /
     icon: file-archive
-    desc:
-      The html is held in contents.html. njks templates loop through the
+    desc: The html is held in contents.html. njks templates loop through the
       quicklinks.yaml data
   - title: Netlify CMS
     url: /
     icon: cloud-upload-alt
-    desc:
-      Quicklinks is a collection in the netlify CMS editor ( ie new entries can
+    desc: Quicklinks is a collection in the netlify CMS editor ( ie new entries can
       be added via the admin site)
   - title: Just like Navbar links
     url: /
     icon: flag-checkered
-    desc:
-      The navbar links iterate over a navigations.yaml file. This file can be
+    desc: The navbar links iterate over a navigations.yaml file. This file can be
       added to ( or deleted via the CMS editor reached from the admin menu link)
+  - title: New Quickie
+    url: https://www.flaxbourtonhub.org.uk
+    desc: Flaxbourton Hub
