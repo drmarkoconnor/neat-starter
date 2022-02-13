@@ -37,7 +37,7 @@ collections:
         name: 'tags'
         multiple: true
         create: true
-        options: ['Tags']
+        # options: ['Tags']
   - label: 'Settings'
     name: 'settings'
     editor:
