@@ -24,7 +24,7 @@ collections:
           name: 'author',
           widget: 'relation',
           collection: 'authors',
-          value_field: 'authors.*',
+          value_field: 'authors.name',
           search_fields: ['authors.*'],
           # display_fields: ['authors.authors.name'],
         }
