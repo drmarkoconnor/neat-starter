@@ -10,5 +10,17 @@
 		"Role": "Polymath",
 		"Number": "07970 386379",
 		"Email": "dr.mark.oconnor@googlemail.com"
+	},
+	{
+		"Name": "Mark Smith",
+		"Role": "Polyglot",
+		"Number": "07970 999",
+		"Email": "dr.mark.oconnor@goog.com"
+	},
+	{
+		"Name": "Mark Jones",
+		"Role": "Actor",
+		"Number": "0796379",
+		"Email": "dr.mark.oco@googlemail.com"
 	}
 ]
