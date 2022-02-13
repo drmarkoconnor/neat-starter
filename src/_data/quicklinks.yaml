@@ -23,5 +23,5 @@ links:
     desc: The navbar links iterate over a navigations.yaml file. This file can be
       added to ( or deleted via the CMS editor reached from the admin menu link)
   - title: New Quickie
-    url: https://www.flaxbourtonhub.org.uk
+    url: https://www.flaxbourtonhub.org
     desc: Flaxbourton Hub
