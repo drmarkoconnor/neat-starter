@@ -24,9 +24,9 @@ collections:
           name: 'author',
           widget: 'relation',
           collection: 'authors',
-          value_field: 'name',
-          search_fields: ['name'],
-          display_fields: ['name'],
+          value_field: 'authors.name',
+          search_fields: ['authors.name'],
+          display_fields: ['authors.name'],
         }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
