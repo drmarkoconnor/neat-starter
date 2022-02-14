@@ -1,8 +1,9 @@
 ---
 author: Mark from vsCode direct
 email: dr.mark.oconnor@googlemail.com
-image: /static/img/us-99.jpg
+image: /static/img/writer_old.jpg
 layout: author.md
+name: Well this is a cockup
 ---
 
 <img src="{{ image }}" alt="">
