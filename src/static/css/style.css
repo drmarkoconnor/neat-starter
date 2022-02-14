@@ -208,7 +208,7 @@ blockquote {
 .full-blog time {
 	color: rgb(255, 0, 64);
 }
-
+/* 
 .in-post {
 	border-radius: 20px;
 	height: 100vh;
@@ -229,7 +229,7 @@ blockquote {
 .in-post h1 {
 	color: inherit;
 	font-weight: bold;
-}
+} */
 /* end blog */
 
 /* FOOTER */
@@ -275,4 +275,38 @@ blockquote {
 .switcher > :nth-last-child(n + 5),
 .switcher > :nth-last-child(n + 5) ~ * {
 	flex-basis: 100%;
+}
+.box {
+	padding: var(--s1);
+	border: var(--border-thin) solid;
+	--color-light: #fff;
+	--color-dark: #000;
+	color: var(--color-dark);
+	background-color: var(--color-light);
+}
+
+.box * {
+	color: inherit;
+}
+
+.box.invert {
+	color: var(--color-light);
+	background-color: var(--color-dark);
+}
+.frame {
+	--n: 16;
+	--d: 9;
+	aspect-ratio: var(--n) / var(--d);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+}
+
+.frame > img,
+.frame > video {
+	inline-size: 80%;
+	block-size: 80%;
+	object-fit: cover;
 }

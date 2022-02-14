@@ -2,8 +2,9 @@
 author: Mark from vsCode direct
 email: dr.mark.oconnor@googlemail.com
 image: /static/img/writer_old.jpg
-layout: author.md
 name: Well this is a cockup
+tags: author
+layout: author.liquid
 ---
 
 <img src="{{ image }}" alt="">

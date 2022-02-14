@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% for author in collections.author %}
+<ul>
+	<li>
+		<a href="{{ author.url }}"
+			>{{ author.data.name }} --> Email:{{ author.data.email }}</a
+		>
+	</li>
+</ul>
+{% endfor %}

@@ -14,7 +14,6 @@ tags:
 
 <quote>Description:{{ description }}</quote>
 
-<section class="in-post" style="background-image: url({{bgImage}})">
 # todo:
 
 - Need to see if my name apostrophe is okay also YES!
