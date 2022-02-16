@@ -1,6 +1,4 @@
-[
-	{
-		"layout": "author.liquid",
-		"tags": "author"
-	}
-]
+{
+	"layout": "author.liquid",
+	"tags": "author"
+}

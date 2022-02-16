@@ -1,13 +1,16 @@
 ---
 layout: default
+eleventyExcludeFromCollections: true
 ---
 
-{% for author in collections.author %}
-<ul>
-	<li>
-		<a href="{{ author.url }}"
-			>{{ author.data.name }} --> Email:{{ author.data.email }}</a
-		>
-	</li>
-</ul>
-{% endfor %}
+<div>
+	{% for writer in collections.author %}
+	<ul>
+		<li>
+			<a href="{{ writer.url }}">{{ writer.data.name }}</a>
+			{% for auth in author %} {% if auth.email == writer.data.email %} {{
+			auth.description }}{% endif %}{% endfor %}
+		</li>
+	</ul>
+	{% endfor %}
+</div>

@@ -1,6 +1,5 @@
 ---
 author: Annie
-layout: author.liquid
 name: Ann
 email: ann@ann.com
 image: /static/img/us-99.jpg
@@ -8,6 +7,8 @@ tags: author
 ---
 
 # Hi Ann
+
+Sluggy here
 
 ## Bio
 

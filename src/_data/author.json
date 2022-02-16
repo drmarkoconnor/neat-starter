@@ -1,18 +1,22 @@
 [
 	{
 		"name": "Mark",
-		"email": "dr.mark.oconnor@googlemail.com"
+		"email": "dr.mark.oconnor@googlemail.com",
+		"description": "One of our finest writers"
 	},
 	{
-		"name": "Ann",
-		"email": "dr.ann.oconnor@googlemail.com"
+		"name": "AnnieData",
+		"email": "ann@ann.com",
+		"description": "One of our earliest writers"
 	},
 	{
 		"name": "Charlotte",
-		"email": "charlotte.oconnor@googlemail.com"
+		"email": "charlotte.oconnor@googlemail.com",
+		"description": "One of our young writers"
 	},
 	{
 		"name": "Marky",
-		"email": "Marky@googlemail.com"
+		"email": "Marky@googlemail.com",
+		"description": "One of our up and coming brilliant writers"
 	}
 ]
