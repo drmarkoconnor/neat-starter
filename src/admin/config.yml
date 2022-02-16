@@ -55,6 +55,7 @@ collections:
   - label: 'NewAuthors'
     name: 'authors'
     folder: 'src/authors'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true
     fields:
       - { label: Title, name: name, widget: string }
