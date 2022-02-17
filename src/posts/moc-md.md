@@ -1,13 +1,13 @@
 ---
 title: This is my first added post written in markdown
-description:
-  A markdown post with injections of html to pull in both in-line stlye and
-  classes
+description: A markdown post with injections of html to pull in both in-line
+  stlye and classes
+author: Jason Checker
 date: 2021-05-08
-author: Dr Mark O'Connor
-bgImage: '/static/img/old_rectory-1.jpg'
+bgImage: /static/img/old_rectory-1.jpg
 tags:
   - Template
+image: /static/img/old_rectory-16.jpg
 ---
 
 #### Tags:{{ tags }}
