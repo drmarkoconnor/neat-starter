@@ -3,9 +3,5 @@ layout: default.html
 ---
 
 <!-- <img src="{{ image }}" alt="" /> -->
-# Hi my name is {{ name }} and I can be reached at {{ email }} Here are my
-posts; {% for post in collections.post %} {% if post.data.author ==
-{{ author }}%}
-<a href="{{ post.url }}">{{ post.data.author }}</a>
-{% endif %} {% endfor %}
+# Hi my name is {{ name }} and I can be reached at {{ email }}
 {{ content | safe }}
