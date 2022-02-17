@@ -1,7 +1,7 @@
 ---
 name: Jason Checker
 email: jason.checker@doesthiswork.com
-author: JasonChecker
+author: Jason Checker
 image: /static/img/us-99.jpg
 ---
 

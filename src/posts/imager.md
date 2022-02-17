@@ -1,9 +1,9 @@
 ---
 title: imager
 description: a new image but do I uase it anywhere in the html?
-author: Mark
+name: Jason Checker
 date: 2022-02-11T16:13:23.412Z
-bgImage: /static/img/us-99.jpg
+image: /static/img/us-99.jpg
 tags:
   - created
 ---
