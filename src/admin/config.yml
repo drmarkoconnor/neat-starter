@@ -16,7 +16,7 @@ collections:
     name: 'blog'
     publish_mode: editorial_workflow
     folder: 'src/posts'
-    slug: '{{ year }}-{{ month }}-{{ day }}_{{ slug }}'
+    slug: '{{ year }}-{{ month }}-{{ day }}_{{ title }}'
     create: true
     editor:
       preview: false
