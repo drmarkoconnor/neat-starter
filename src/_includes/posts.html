@@ -3,13 +3,20 @@ layout: default
 prism: true
 ---
 
-<div class="frame" style="background-image: url({{bgImage}})"></div>
-<article class="full-blog">
-	<h1>{{title}}</h1>
-	<p>
-		<time> {{ date | readableDate }} by author {{ author }} </time>
-	</p>
-	<p>tags: {{tags}}</p>
-
-	{{ content | safe }}
-</article>
+<div class="with-sidebar">
+	<div class="shadow">
+		<img class="frame" src="{{image }}" ) alt="" />
+	</div>
+	<!-- <div style="background-image: url({{ image }})"></div> -->
+	<article class="full-blog">
+		<h1>{{title}}</h1>
+		<p>
+			<time> {{ date | readableDate }} by author {{ author }} </time>
+		</p>
+		<p>
+			Tags: {% for tgs in tags %} <a href="/tags/{{tgs}}">{{tgs}}</a> {% endfor
+			%}
+		</p>
+		{{ content | safe }}
+	</article>
+</div>

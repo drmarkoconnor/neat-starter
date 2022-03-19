@@ -1,0 +1,19 @@
+---
+layout: default
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+
+<div class="with-sidebar">
+	<h1>All posts with the tag - {{ tag }}</h1>
+	<div>
+		<ul>
+			{% set taglist = collections[ tag ] %} {% for post in taglist | reverse %}
+			<li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

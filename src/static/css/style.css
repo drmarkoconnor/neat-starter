@@ -78,6 +78,8 @@ p {
 
 img {
 	width: 100%;
+	filter: drop-shadow(2px 2px 2px hsl(217, 19%, 35%));
+	position: relative;
 }
 
 .quicklinks {
@@ -302,13 +304,14 @@ blockquote {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 15px;
+	border-radius: 25px;
+	margin-top: 1rem;
 }
 
 .frame > img,
 .frame > video {
-	inline-size: 80%;
-	block-size: 80%;
+	inline-size: 100%;
+	block-size: 100%;
 	object-fit: cover;
 }
 .grid {
@@ -373,4 +376,37 @@ blockquote {
 	/* This will affect text in paragraphs not headers */
 	/* text-align: center; */
 	/* ... */
+}
+
+/* SIDEBAR */
+
+.with-sidebar {
+	display: flex;
+	flex-wrap: wrap;
+	/* default align items is stretch which would give equal heights */
+	align-items: flex-start;
+	gap: var(--lg-space, 1em);
+}
+
+.with-sidebar > :last-child {
+	flex-basis: 0;
+	flex-grow: 999;
+	min-inline-size: 50%;
+}
+.with-sidebar > :first-child {
+	/* If sidebar contents are small or predictable size could omit the next line as the width will be detemined by content - it will still break at >50% sidebar width */
+	flex-basis: 25ch;
+	flex-grow: 1;
+	/* z-index: -1; */
+	/* z-index needed as drop shadow seems to change z-index */
+	/* https://stackoverflow.com/questions/3258943/css3-drop-shadow-under-another-div-z-index-not-working */
+}
+.with-sidebar:nth-child(even) {
+	background-color: hsl(0, 90%, 100%);
+}
+.with-sidebar:nth-child(odd) {
+	background-color: hsl(0, 70%, 90%);
+}
+.shadow {
+	filter: drop-shadow(2px 2px 2px hsl(217, 19%, 35%));
 }
