@@ -38,6 +38,7 @@ collections:
       - widget: list
         label: 'Tags'
         name: 'tags'
+        field: { label: 'tag', name: 'tag', widget: string }
         allow_add: true
         default: ['news']
 
