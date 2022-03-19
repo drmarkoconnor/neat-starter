@@ -35,11 +35,11 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Image', name: 'image', widget: 'image' }
-      - widget: string
-        label: 'tags'
+      - widget: list
+        label: 'Tags'
         name: 'tags'
-        multiple: true
-        create: true
+        allow_add: true
+        default: ['news']
 
   - label: 'Settings'
     name: 'settings'
