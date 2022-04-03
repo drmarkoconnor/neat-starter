@@ -65,12 +65,12 @@ collections:
     identifier_field: name
     folder: 'src/authors'
     publish_mode: editorial_workflow
-    slug: '{{ slug }}'
+    slug: '{{slug}}'
     create: true
     fields:
       - { label: Name, name: name, widget: string }
       - { label: Email, name: email, widget: string }
-      - { label: Image, name: image, widget: image }
+      - { label: Image, name: authorimage, widget: image }
       - { label: Body, name: body, widget: markdown }
 
   # - label: 'The Authors'
@@ -93,3 +93,4 @@ collections:
   #           name: 'mobile'
   #           required: false
   #           widget: 'number'
+
