@@ -1,8 +1,10 @@
 ---
-author: Mark from vsCode direct
-email: dr.mark.oconnor@googlemail.com
-image: /static/img/writer_old.jpg
-name: Well
+name: Mark O'Connor
+email: email@theauthorsemail
+twitter: #authorstwitterhandle
+authorimage: /static/img/us-99.jpg
+description:
+  'Wow this author is great and I wonder whether the single quotes are needed'
+tags: author
 ---
 
-My description in global data file authors should be above

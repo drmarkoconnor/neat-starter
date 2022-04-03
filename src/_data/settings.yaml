@@ -1,10 +1,11 @@
 settings:
-name: Name of Site
-author: Author Name
+name: 11ty CMS Example
+author: MOC
 url: /
-date: 7/2/1962
+date: 2022
 meta:
   - date: 2022-02-13T10:56:43.860Z
     name: BBC
     author: Me
     url: https://bbc.co.uk/
+
