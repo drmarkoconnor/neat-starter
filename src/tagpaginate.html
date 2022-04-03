@@ -7,13 +7,17 @@ pagination:
 permalink: /tags/{{ tag }}/
 ---
 
+<h1>All posts with the tag - {{ tag }}</h1>
+
+{% set taglist = collections[ tag ] %} {% for post in taglist | reverse %}
 <div class="with-sidebar">
-	<h1>All posts with the tag - {{ tag }}</h1>
+	<div class="frame">
+		<img src="{{ post.data.image}}" alt="post image" />
+	</div>
 	<div>
-		<ul>
-			{% set taglist = collections[ tag ] %} {% for post in taglist | reverse %}
-			<li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
-			{% endfor %}
-		</ul>
+		<a href="{{ post.url | url }}">{{ post.data.title }}</a> by {{
+		post.data.author }}
 	</div>
 </div>
+{% endfor %}
+
