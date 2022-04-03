@@ -9,8 +9,9 @@ eleventyExcludeFromCollections: true
 		<li>
 			<a href="{{ writer.url }}">{{ writer.data.name }}</a>
 			{% for auth in author %} {% if auth.email == writer.data.email %} {{
-			auth.description }}{% endif %}{% endfor %}
+			auth.description }} {{writer.data.authorimage}}{% endif %}{% endfor %}
 		</li>
 	</ul>
 	{% endfor %}
 </div>
+
