@@ -9,3 +9,5 @@ items:
     url: /blog
   - text: Authors
     url: /authors/
+  - text: News
+    url: /
