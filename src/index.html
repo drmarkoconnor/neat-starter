@@ -19,8 +19,7 @@ awesome: true
 	<h1 class="">Welcome to {{title}} <i class="fas fa-home fa-4x"></i></h1>
 	<h2>Default layouts</h2>
 	<p>
-		This home page (index.html) references the default.html layout (in _layouts
-		dir) in its page frontmatter which in turn injects the navbar and the footer
+		This home page (index.html) references the default.html layout (in _includes/partials/) in its page frontmatter which in turn injects the navbar and the footer
 		via an include _partials/navbar and header.
 	</p>
 	<h2>Front matter conditonal logic</h2>
@@ -41,11 +40,11 @@ awesome: true
 	</p>
 	<h2>Data derived nav links</h2>
 	<p>
-		The navbar derives its links from iterating over the elements of the navigation.yaml file. The Netlify CMS can change this file too ( whetheer that is useful is a use case for each user of this template)
+		The navbar derives its links from iterating over the elements of the navigation.yaml file. The Netlify CMS can change this file too ( whether that is useful as a use case is up to the user)
 	</p>
 	<h2>CSS Styling</h2><p>
 	The main style sheet is listed last in the default head so will
-		have a greater priority thasn the others referenced.
+		have a greater priority than the others referenced.
 	</p>
 	<h2>Data derived content</h2>
 	<p>This css styled 'table' (it's not a table ) is generated from data, held in the quicklinks.yaml file, iterated over by the partial contents.html file. Styling is in styles.css using a .quicklinks class</p>

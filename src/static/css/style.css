@@ -5,7 +5,7 @@
 :root {
 	/* sprimary color block */
 	--primary-color-100: white;
-	--primary-color-300: hsla(126, 25%, 77%, 0.816);
+	--primary-color-300: hsla(237, 68%, 44%, 0.816);
 	--primary-color-600: hsla(125, 40%, 40%, 0.816);
 	--primary-color-900: hsla(125, 30%, 30%, 0.816);
 	--fader: hsla(0, 15%, 18%, 0.3);
@@ -410,3 +410,4 @@ blockquote {
 .shadow {
 	filter: drop-shadow(2px 2px 2px hsl(217, 19%, 35%));
 }
+

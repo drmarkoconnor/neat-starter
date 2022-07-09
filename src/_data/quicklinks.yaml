@@ -5,7 +5,7 @@ links:
     desc: This section's content is held in the quicklinks.yaml file
   - title: Styling
     url: /
-    icon: twitter
+    icon: box
     desc: It is styled with the .quicklinks class selector in styles.css
   - title: HTML
     url: /
@@ -25,3 +25,4 @@ links:
     desc:
       The navbar links iterate over a navigations.yaml file. This file can be
       added to ( or deleted via the CMS editor reached from the admin menu link)
+
