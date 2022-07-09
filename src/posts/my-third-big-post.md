@@ -8,6 +8,7 @@ date: 2020-09-03
 author: Surjith S M
 tags:
   - second-tag
+  - moc
 ---
 
 Leverage agile frameworks to provide a robust synopsis for high level overviews.
@@ -101,10 +102,10 @@ Syntax highlighting
 
 ```js
 var foo = function (bar) {
-	return bar++;
-};
+	return bar++
+}
 
-console.log(foo(5));
+console.log(foo(5))
 ```
 
 ## Tables
@@ -126,3 +127,4 @@ Autoconverted link https://github.com/nodeca/pica
 ## Images
 
 ![Minion](https://octodex.github.com/images/minion.png)
+
