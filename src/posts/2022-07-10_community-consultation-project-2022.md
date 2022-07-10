@@ -3,7 +3,7 @@ title: Community consultation project 2022
 description: Flax Bourton Village Hub and Flax Bourton Parish Council have
   joined forces to ask our local community and residents about their views on
   the village and the Hub building.
-author: Mark O'Connor
+author: Terry
 date: 2022-07-10T09:05:38.438Z
 image: /static/img/old_rectory-7.jpg
 tags:
